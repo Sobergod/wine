@@ -1,0 +1,28 @@
+#mheader {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.c-nav-link i {
+    color: #400A00;
+    font-size: 30px;
+}
+
+.c-nav-link:hover {
+    text-decoration: none;
+}
+
+.nav-link {
+    text-align: center;
+}
+.navbar-toggler:active {
+    transform: rotateX(90reg);
+}
+
+.c-nav-item a {
+    margin: 0 0.5rem;
+    color: #400A00;
+    font-size: 14px;
+}
