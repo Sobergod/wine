@@ -1,3 +1,9 @@
+button:focus {
+    outline: unset;
+}
+
+
+/* header start */
 #mheader {
     position: fixed;
     top: 10px;
@@ -10,15 +16,34 @@
     font-size: 30px;
 }
 
+.navbar-toggler {
+    outline: unset;
+    transition: all .2s linear;
+}
+
+.navbar-toggler.isactive {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -webkit-transform: rotate(90deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(90deg);
+    /* Opera */
+    transition: all .2s linear;
+}
+
 .c-nav-link:hover {
     text-decoration: none;
+    transition: all 1s linear;
 }
 
 .nav-link {
     text-align: center;
-}
-.navbar-toggler:active {
-    transform: rotateX(90reg);
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
 }
 
 .c-nav-item a {
@@ -26,3 +51,31 @@
     color: #400A00;
     font-size: 14px;
 }
+
+@media(max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+        border-top: 1px solid #eeeeee;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        display: none;
+        text-align: center;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        text-align: right;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media (min-width: 856px) {
+    .navbar-brand img {
+        width: 140px;
+        height: 50px;
+        display: inline-block;
+    }
+}
+/* header end */
