@@ -90,17 +90,34 @@ button:focus {
     padding-top: 100px;
     height: 200px
 }
+
 /* container end */
 
 /* footer start */
 
 #mfooter {
-    padding: 30px;
+    padding: 1.875rem;
     background: #441100;
     color: #fff;
 }
+
 .f-title {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+    font-size: 1.25rem
 }
+
+.f-content {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    color: #eee;
+}
+.f-content p a {
+    color: #fff;
+}
+.f-content p a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
 /* footer end */
