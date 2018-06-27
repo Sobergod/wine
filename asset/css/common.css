@@ -137,6 +137,35 @@ button:focus {
 
 /* header end */
 
+/* bread start */
+
+.breadcrumb {
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    background: #500701;
+    color: #B78431;
+    border-radius: unset;
+    font-size: 0.875rem;
+}
+
+.breadcrumb a {
+    color: rgb(233, 229, 222);
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: #B78431;
+}
+
+.breadcrumb>li+li:before {
+    margin: 0 5px;
+    color: #B78431;
+    content: "/";
+}
+
+/* bread end */
+
 /* container start */
 
 #mcontainer {
