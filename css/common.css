@@ -137,6 +137,11 @@ button:focus {
         width: 150px;
     }
 }
+@media (max-width: 550px) {
+    .qrcode-wrap {
+        text-align: center;
+    }
+}
 
 /* footer end */
 
@@ -151,11 +156,12 @@ button:focus {
 
 .f-content-sp {
     margin-top: 0;
-    background: rgb(51, 8, 1);
+    /* background: rgb(51, 8, 1); */
     padding: 10px;
 }
 
 .f-content-sp p {
+    padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 }
 

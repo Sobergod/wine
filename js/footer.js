@@ -21,11 +21,11 @@ $(document).ready(function () {
             fContent.hide();
             fBtn.show();
             fTitle.addClass("f-title-sp");
-            // fTitle.unbind("click");
 
         } else {
             fTitle.bind("click");
             fContent.show();
+            fContent.removeClass("f-content-sp");
             fTitle.removeClass("f-title-sp");
             fBtn.hide()
         }
