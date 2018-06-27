@@ -17,7 +17,7 @@ $(document).ready(function () {
     })
     // 直接判断当前浏览器宽度
     function checkDocumentWidth(width) {
-        if (width <= 550) {
+        if (width <= 570) {
             fContent.hide();
             fBtn.show();
             fTitle.addClass("f-title-sp");
