@@ -140,9 +140,10 @@ button:focus {
 /* bread start */
 
 .breadcrumb {
-    height: 40px;
-    padding: 0 20px;
-    line-height: 40px;
+    margin: 0;
+    padding: 0 1.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     background: #500701;
     color: #B78431;
     border-radius: unset;
@@ -169,8 +170,7 @@ button:focus {
 /* container start */
 
 #mcontainer {
-    padding-top: 6.25rem;
-    height: 12.5rem
+    /* padding: 40px 0; */
 }
 
 /* container end */
@@ -319,3 +319,182 @@ button:focus {
 }
 
 /*  特殊样式控制 end*/
+
+/* 招聘 start */
+
+.title-content {
+    background: #410703;
+}
+
+.detail-content {
+    position: relative;
+    padding: 20px 0;
+    background-image: url(/asset/img/bg_recruit.jpg);
+    background-position: 25% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recruit-bottle,
+.recruit-bottle2 {
+    position: absolute;
+    display: none;
+}
+
+
+@media(min-width:1366px) {
+    .detail-content {
+        padding: 20px 0;
+        background-image: url(/asset/img/bg_recruit_em.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .recruit-bottle {
+        z-index: 1;
+        right: 80%;
+        top: 13%;
+        width: 185px;
+        height: 430px;
+        display: block;
+    }
+    .recruit-bottle2 {
+        z-index: 1;
+        display: block;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        height: 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .detail-content {
+        padding: 20px 0;
+        background-image: url(/asset/img/bg_recruit_em.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .recruit-bottle {
+        z-index: 1;
+        right: 5%;
+        top: 40%;
+        width: 150px;
+        height: 330px;
+        display: block;
+    }
+}
+
+@media(max-width:320px) {
+    .recruit-bottle {
+        z-index: 1;
+        right: 5%;
+        top: 50%;
+        width: 100px;
+        height: 230px;
+        display: block;
+    }
+}
+
+.recruit-detail-wrap,
+.recruit-list-wrap {
+    margin: 1.25rem auto;
+    width: 60%;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.recruit-title {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #B9872E;
+}
+
+.recruit-list-title {
+    font-size: 17px;
+    color: #B9872E;
+}
+
+.recruit-list {
+    padding: 0;
+    list-style: none;
+}
+
+.recruit-list li {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FBE8A3;
+}
+
+.recruit-list li:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.item-left {
+    float: left;
+    color: #FBE8A3;
+}
+
+.item-right {
+    float: right;
+}
+
+.item-right a {
+    padding: 0 5px;
+    color: #FBE8A3;
+    border-radius: 20px;
+    border: 1px solid #FBE8A3;
+}
+
+.item-right a:hover {
+    text-decoration: none;
+}
+
+.recruit-more {
+    text-align: right;
+}
+
+.recruit-more span {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 20px;
+    /* border: 1px solid #000; */
+    font-size: 12px;
+    background: #FBE7A4;
+}
+
+.recruit-more span a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.recruit-more span a:hover {
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .recruit-detail-wrap,
+    .recruit-list-wrap {
+        width: 90%;
+    }
+    .recruit-list li {
+        margin-bottom: 20px;
+        border-bottom: 0px solid #FBE8A3;
+    }
+    .item-left {
+        float: none;
+        /* text-align: center;
+        font-size: 17px; */
+    }
+    .item-right {
+        float: none;
+        /* text-align: center; */
+    }
+    .recruit-more {
+        text-align: center;
+    }
+}
+
+/* 招聘 end */
