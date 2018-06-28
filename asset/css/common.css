@@ -249,20 +249,15 @@ button:focus {
 
 /* 特殊样式控制 start*/
 
-.f-title-sp {
-    padding: 0.625rem;
-    margin: 0.3125rem 0;
-    border-bottom: 0.3125rem solid #eee;
-    cursor: pointer;
-}
-
 .f-content-sp {
+    /* display: none; */
     margin-top: 0;
     /* background: rgb(51, 8, 1); */
     padding: 0.625rem;
 }
 
 .f-content-sp p {
+    display: none;
     padding-bottom: 0.3125rem;
     border-bottom: 0.0625rem solid #fff;
     font-size: 14px;
@@ -285,6 +280,42 @@ button:focus {
 .fbtn-isactive {
     transform: rotate(-180deg);
     transition: all .3s linear
+}
+
+@media (max-width:580px) {
+    .f-title-sp {
+        padding: 0.625rem;
+        margin: 0.3125rem 0;
+        border-bottom: 0.3125rem solid #eee;
+        cursor: pointer;
+    }
+    .f-content {
+        display: none;
+    }
+    .f-content-sp p {
+        display: block;
+        padding-bottom: 0.3125rem;
+        border-bottom: 0.0625rem solid #fff;
+        font-size: 14px;
+    }
+    .f-btn {
+        display: inline-block;
+    }
+}
+
+.isShow {
+    display: block;
+    animation: show .5s 1;
+}
+
+@keyframes show {
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*  特殊样式控制 end*/
