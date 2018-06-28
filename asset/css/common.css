@@ -2,6 +2,14 @@ button:focus {
     outline: unset;
 }
 
+@font-face {
+    font-family: 'yuweij';
+    src: url('../font/yuweij/yuweiji.ttf');
+    src: url('../font/yuweij/yuweiji.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* header start */
 
 .mheader-wrap {
@@ -248,7 +256,15 @@ button:focus {
 /* footer end */
 
 /* 特殊样式控制 start*/
-
+.sp {
+    padding: 4px;
+    background: #eee;
+    font-size: 12px;
+    text-align: center;
+}
+.sp p {
+    margin: 0;
+}
 .f-content-sp {
     /* display: none; */
     margin-top: 0;
@@ -323,7 +339,31 @@ button:focus {
 /* 招聘 start */
 
 .title-content {
+    padding: 20px;
     background: #410703;
+    text-align: center;
+}
+
+.title-content p {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid #fff;
+    font-family: 'yuweij';
+    font-size: 30px;
+    line-height: 2em;
+    color: #F8D51E;
+    width: 2.2em;
+}
+
+@media(max-width:768px) {
+    .title-content p {
+        margin-top: 20px;
+        padding: 5px 10px;
+        width: auto;
+        text-align: center;
+        border: none;
+    }
 }
 
 .detail-content {
@@ -340,7 +380,6 @@ button:focus {
     position: absolute;
     display: none;
 }
-
 
 @media(min-width:1366px) {
     .detail-content {
