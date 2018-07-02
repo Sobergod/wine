@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="asset/lib/bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="asset/lib/swiper/4.3.3/css/swiper.min.css">
-    <link rel="stylesheet" href="asset/font/iconfont.css">
-    <link rel="stylesheet" href="asset/css/common.css">
-    <title>通用布局</title>
+    <link rel="stylesheet" href="/asset/lib/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/asset/lib/swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="/asset/font/iconfont.css">
+    <link rel="stylesheet" href="/asset/css/common.css">
+    <link rel="stylesheet" href="/asset/css/abs.css">
+    <title>企业简介</title>
     <style>
     </style>
 </head>
@@ -20,8 +21,8 @@
     <div class="mheader-wrap">
         <div id="mheader">
             <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="index.html">
-                    <img src="asset/img/logo.png" alt="" width="170" height="55">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/asset/img/logo.png" alt="" width="170" height="55">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <a class="c-nav-link" href="javascript:;">
@@ -55,7 +56,7 @@
                             </a>
                         </li>
                         <li class="nav-item c-nav-item">
-                            <a class="nav-link" href="recruit/recruit.html">
+                            <a class="nav-link" href="/recruit/recruit.html">
                                 <i class="iconfont icon-guojihua"></i>
                                 招聘信息
                             </a>
@@ -72,7 +73,7 @@
         </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg-wrap" style="background-image: url(asset/img/banner.jpg);"></div>
+                <div class="swiper-slide bg-wrap" style="background-image: url(/asset/img/banner.jpg);"></div>
             </div>
 
             <!-- Add Pagination -->
@@ -85,15 +86,54 @@
     <!-- 面包屑导航 strat -->
     <div class="bread">
         <ol class="breadcrumb">
-            <!-- <li>招聘信息</li> -->
-            <li class="active">主页 Home</li>
+            <li>
+                <a href="/index.html">主页</a>
+            </li>
+            <li class="active">企业介绍 Abstract</li>
         </ol>
     </div>
     <!-- 面包屑导航 end -->
 
     <!-- 公共主体start -->
     <div id="mcontainer">
-
+        <div class="abs-title-wrap">
+            <div class="abs-title-text">
+                <span class="c">公司简介</span>
+                <span class="e">company profile</span>
+                <div class="line-wrap">
+                    <span class="l-line"></span>
+                    <span class="c-line"></span>
+                    <span class="r-line"></span>
+                </div>
+            </div>
+            <div class="abs-title-img">
+                <div class="abs-timg-wrap" style="background-image: url(/asset/img/abs_bg3.jpg);">
+                </div>
+                <div class="abs-ttext-wrap" style="background-image: url(/asset/img/abs_bg1.jpg);">
+                    <span>
+                        贵州茅台酒厂(集团)白金樽营销策划中心成立于2017年,总部位于美丽的北国春城、吉林省省会长春市。
+                    </span>
+                    <a href="">点击查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="abs-title-bg ">
+            <div class="abs-article-wrap container">
+                <div class="abs-atext-wrap">
+                    白金樽酒作为贵州茅台酒厂（集团）白金酒有限责任公司推出的一款柔和酱香型白酒，秉承茅台集团“以人为本，以质求存”的核心价值观，整合资源，形成了集研发、生产、销售、服务于一体的中国柔和酱香型白酒平台。 茅台白金樽酒在传承了茅台文化的基础上，开创讲究文化，倡导—用小杯，细品的健康饮酒方式，讲究生命的健康、讲究生存的品质、讲究生活的品味，讲究成功、和谐，讲究人文关怀，力争通过打造品牌集群，增加“柔和酱香型酒”的市场份额及影响力。
+                    茅台白金樽延续传统茅台大曲酱香型酒的制作工艺，经过九次蒸煮，八次发酵，七次取酒，高温制曲，高温堆积，高温发酵等多道程序，以优质原材料为核心，严格把控基酒生产及产品研发，使制作出的白金樽具有酱香突出、酒体醇厚、入口更柔、更顺、更香的独特酒体风格！
+                    白金樽酒凭借“柔、顺、香、厚、醇”的纯正口感，一经推出便得到了社会和消费者的广泛认可。企业始终坚持“战略思维导向、融合发展布局、深耕细作市场、持续创造价值“的经营理念，一方面，致力于打造中国次高端柔和酱香型酒奠基者和领跑者，与中国高端酱香酒第一品牌茅台酒比翼双飞、相得益彰；另一方面，坚信“四成”，最终成为茅台集团主要利税的输送者，实现并购目标。
+                    茅台出品白金樽酒，用小杯，细细品！
+                </div>
+                <div class="open-artical">
+                    <span class="open-btn">展开全文</span>
+                </div>
+            </div>
+        </div>
+        <div class="abs-certificate-wrap">
+            <img src="/asset/img/abs_bg2.jpg" alt="">
+            <div class="abs-img-border"></div>
+        </div>
     </div>
     <!-- 公共主体end -->
 
@@ -165,11 +205,11 @@
                 <div class="qrcode-wrap col-12 col-sm-6 col-md-3">
                     <div class="row">
                         <div class="wechat col-6">
-                            <img class="qrcode" src="asset/img/erweima_wechat.png" alt="二维码">
+                            <img class="qrcode" src="/asset/img/erweima_wechat.png" alt="二维码">
                             <p>微信公众平台</p>
                         </div>
                         <div class="webo col-6">
-                            <img class="qrcode" src="asset/img/erweima_webo.png" alt="二维码">
+                            <img class="qrcode" src="/asset/img/erweima_webo.png" alt="二维码">
                             <p>微博</p>
                         </div>
                     </div>
@@ -178,10 +218,10 @@
         </div>
     </div>
     <!-- 公共底部end -->
-    <script src="asset/lib/jquery/3.3.0/jquery.js"></script>
-    <script src="asset/lib/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-    <script src="asset/lib/swiper/4.3.3/js/swiper.min.js"></script>
-    <script src="asset/js/footer.js"></script>
+    <script src="/asset/lib/jquery/3.3.0/jquery.js"></script>
+    <script src="/asset/lib/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="/asset/lib/swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="/asset/js/footer.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: {
@@ -189,6 +229,11 @@
                 type: 'progressbar',
             },
         });
+        var openBtn = $(".open-btn"),
+            textWrap = $(".abs-atext-wrap");
+        openBtn.on("click", function () {
+            textWrap.toggleClass("autoheight");
+        })
     </script>
 </body>
 
