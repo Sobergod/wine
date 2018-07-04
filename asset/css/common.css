@@ -407,7 +407,7 @@ button:focus {
 .detail-content {
     position: relative;
     padding: 1.25rem 0;
-    background-image: url(/asset/img/bg_recruit.jpg);
+    background-image: url(../img/bg_recruit.jpg);
     background-position: 25% 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -429,7 +429,7 @@ button:focus {
 @media(min-width:1366px) {
     .detail-content {
         padding: 20px 0;
-        background-image: url(/asset/img/bg_recruit_em.jpg);
+        background-image: url(../img/bg_recruit_em.jpg);
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -457,7 +457,7 @@ button:focus {
 @media(max-width:768px) {
     .detail-content {
         padding: 20px 0;
-        background-image: url(/asset/img/bg_recruit_em.jpg);
+        background-image: url(../img/bg_recruit_em.jpg);
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
@@ -594,7 +594,7 @@ button:focus {
 
 .sub-detail-content {
     position: relative;
-    background-image: url(/asset/img/bg_recruit_em.jpg);
+    background-image: url(../img/bg_recruit_em.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -626,7 +626,6 @@ button:focus {
 .job-detail p {
     min-height: 150px;
 }
-
 
 .job-detail p span {
     font-weight: 0;
