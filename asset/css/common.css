@@ -10,6 +10,14 @@ button:focus {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HYChengXingJ';
+    src: url('../font/HYChenxingJ/HYChengXingJ.ttf');
+    src: url('../font/HYChenxingJ/HYChengXingJ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* header start */
 
 .mheader-wrap {

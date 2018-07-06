@@ -264,3 +264,308 @@
 }
 
 /* 企业简介 end*/
+
+/* 企业文化 start */
+
+#culture .tab-header {
+    padding: 20px 0;
+    background: #4E1A0C;
+}
+
+#culture .nav-item {
+    width: 110px;
+    font-size: 14px;
+}
+
+#culture .nav-pills .nav-link {
+    padding: 0 10px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#culture .nav-pills .active {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #EEC801;
+    color: #EEC801;
+}
+
+#culture .tab-header {
+    justify-content: space-around;
+}
+
+@media(min-width:575px) {
+    #culture .tab-header {
+        justify-content: center;
+    }
+}
+
+.detail-pane-box {
+    padding: 20px 0;
+    min-height: 400px;
+    /* background: #500500; */
+}
+
+.detail-title {
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'HYChengXingJ';
+}
+
+.detail-title p {
+    margin: 0;
+}
+
+.detail-title p:first-child {
+    font-size: 40px;
+    color: #fff;
+}
+
+.detail-title p:last-child {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    -moz-box-shadow: -2px -2px 2px -2px #eee inset;
+    /* For Firefox3.6+ */
+    -webkit-box-shadow: -2px -2px 2px -2px #eee inset;
+    /* For Chrome5+, Safari5+ */
+    box-shadow: -2px -2px 2px -2px #eee inset;
+    /* For Latest Opera */
+    color: #F5D81C;
+}
+
+.detail-title p:last-child span {
+    color: red;
+}
+
+.jingshen,
+.yuanjing,
+.jazhiguan,
+.jingying,
+.linian,
+.zongzhi {
+    position: relative;
+    background-size: cover;
+    background-position: 25% 25%;
+}
+
+.jingshen {
+    background-image: url(../img/abs_detail/bg_jingshen.jpg);
+}
+
+.yuanjing {
+    background-image: url(../img/abs_detail/bg_yuanjing.jpg);
+}
+
+.jazhiguan {
+    background-image: url(../img/abs_detail/bg_jiazhiguan.jpg);
+    background-position: 25% 50%;
+}
+
+.jingying {
+    background-image: url(../img/abs_detail/bg_jingying.jpg);
+}
+
+.linian {
+    background-image: url(../img/abs_detail/bg_linian.jpg);
+}
+
+.zongzhi {
+    background-image: url(../img/abs_detail/bg_zongzhi.jpg);
+}
+
+.jingshen-item {
+    z-index: -1;
+    position: absolute;
+    left: 15%;
+    top: 10px;
+    width: 100px;
+}
+
+@media(min-width:600px) {
+    .jingshen-item {
+        z-index: 2;
+        left: 15%;
+        ;
+        width: 100px;
+    }
+}
+
+@media(min-width:768px) {
+    .jingshen-item {
+        z-index: 2;
+        left: 25%;
+        width: 100px;
+    }
+}
+
+@media(min-width:990px) {
+    .jingshen-item {
+        z-index: 2;
+        left: 28%;
+        top: 0px;
+        width: 120px;
+    }
+}
+
+.jingshen-wrap {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 0 40px 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.js-item {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.js-item-l,
+.js-item-r {
+    width: 55%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.js-item-l {
+    padding: 5px 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #B98934;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.js-item-r {
+    margin-left: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+@media(max-width:768px) {
+    .js-item-l,
+    .js-item-r {
+        display: block;
+        margin: 0 auto;
+    }
+    .js-item-l {
+        margin-bottom: 20px;
+    }
+    .js-item-r {
+        width: 80%;
+    }
+}
+
+.yuanjing-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px 0 40px 0;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.yuanjing-item {
+    display: inline-block;
+    padding: 20px;
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    writing-mode: tb-lr;
+    background: #BB8934;
+}
+
+.linian-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.linian-item {
+    text-align: center;
+}
+
+.linian-item-t {
+    margin: 0 auto;
+}
+
+.linian-item-t {
+    padding: 5px 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #BA8933;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.linian-item-b {
+    padding: 10px 10px;
+    margin: 20px auto;
+    height: 400px;
+    writing-mode: vertical-lr;
+    letter-spacing: 10px;
+    writing-mode: tb-lr;
+    text-align: left;
+    border: 1px solid #BA8933;
+    color: #BA8933;
+}
+
+.zongzhi-item {
+    margin-bottom: 20px;
+}
+
+.zongzhi-item span {
+    color: #EEC801;
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+
+.zz-item1,
+.zz-item1-con {
+    display: inline-block;
+}
+
+.zz-item1-con {
+    color: #fff;
+}
+
+.jiazhi_item2,
+.jiazhi_item1,
+.linian-item1,
+.linian-item2 {
+    position: absolute;
+    display: none;
+}
+
+@media(min-width:1350px) {
+    .jiazhi_item2 {
+        display: inline-block;
+        width: 150px;
+        top: 0;
+        right: 10%;
+    }
+    .jiazhi_item1 {
+        display: inline-block;
+        width: 200px;
+        bottom: 0;
+        left: 0;
+    }
+    .linian-item1 {
+        display: inline-block;
+        width: 150px;
+        top: 0;
+        left: 10%;
+    }
+    .linian-item2 {
+        display: inline-block;
+        width: 110px;
+        bottom: 0;
+        right: 10%;
+    }
+}
+
+/* 企业文化 end */
