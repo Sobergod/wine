@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../asset/lib/swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" href="../asset/font/iconfont.css">
     <link rel="stylesheet" href="../asset/css/common.css">
-    <link rel="stylesheet" href="../asset/css/abs.css">
-    <title>企业简介</title>
+    <link rel="stylesheet" href="../asset/css/news.css">
+    <title>新闻详情</title>
     <style>
     </style>
 </head>
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content:flex-end">
                     <ul class="navbar-nav">
                         <li class="nav-item c-nav-item">
-                            <a class="nav-link" href="../index.html">
+                            <a class="nav-link" href="#">
                                 <i class="iconfont icon-iconfonthome"></i>
                                 官网首页
                             </a>
@@ -75,7 +75,6 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg-wrap" style="background-image: url(../asset/img/banner.jpg);"></div>
             </div>
-
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
@@ -87,53 +86,20 @@
     <div class="bread">
         <ol class="breadcrumb">
             <li>
-                <a href="../index.html">主页</a>
+                <a href="newsIndex.html">新闻资讯</a>
             </li>
-            <li class="active">企业介绍 Abstract</li>
+            <li class="active">集团新闻</li>
         </ol>
     </div>
     <!-- 面包屑导航 end -->
 
     <!-- 公共主体start -->
-    <div id="mcontainer">
-        <div class="abs-title-wrap">
-            <div class="abs-title-text">
-                <span class="c">公司简介</span>
-                <span class="e">company profile</span>
-                <div class="line-wrap">
-                    <span class="l-line"></span>
-                    <span class="c-line"></span>
-                    <span class="r-line"></span>
-                </div>
-            </div>
-            <div class="abs-title-img">
-                <div class="abs-timg-wrap" style="background-image: url(../asset/img/abs_bg3.jpg);">
-                </div>
-                <div class="abs-ttext-wrap" style="background-image: url(../asset/img/abs_bg1.jpg);">
-                    <span>
-                        贵州茅台酒厂(集团)白金樽营销策划中心成立于2017年,总部位于美丽的北国春城、吉林省省会长春市。
-                    </span>
-                    <a href="abstractdetail.html">点击查看更多</a>
-                </div>
-            </div>
+    <div id="mcontainer" class="news-details-bg">
+        <div class="news-detail-title">贵州茅台酒厂（集团）白金酒有限责任公司</div>
+        <div class="news-detail-content">
+            <div class="container"></div>
         </div>
-        <div class="abs-title-bg ">
-            <div class="abs-article-wrap container">
-                <div class="abs-atext-wrap">
-                    白金樽酒作为贵州茅台酒厂（集团）白金酒有限责任公司推出的一款柔和酱香型白酒，秉承茅台集团“以人为本，以质求存”的核心价值观，整合资源，形成了集研发、生产、销售、服务于一体的中国柔和酱香型白酒平台。 茅台白金樽酒在传承了茅台文化的基础上，开创讲究文化，倡导—用小杯，细品的健康饮酒方式，讲究生命的健康、讲究生存的品质、讲究生活的品味，讲究成功、和谐，讲究人文关怀，力争通过打造品牌集群，增加“柔和酱香型酒”的市场份额及影响力。
-                    茅台白金樽延续传统茅台大曲酱香型酒的制作工艺，经过九次蒸煮，八次发酵，七次取酒，高温制曲，高温堆积，高温发酵等多道程序，以优质原材料为核心，严格把控基酒生产及产品研发，使制作出的白金樽具有酱香突出、酒体醇厚、入口更柔、更顺、更香的独特酒体风格！
-                    白金樽酒凭借“柔、顺、香、厚、醇”的纯正口感，一经推出便得到了社会和消费者的广泛认可。企业始终坚持“战略思维导向、融合发展布局、深耕细作市场、持续创造价值“的经营理念，一方面，致力于打造中国次高端柔和酱香型酒奠基者和领跑者，与中国高端酱香酒第一品牌茅台酒比翼双飞、相得益彰；另一方面，坚信“四成”，最终成为茅台集团主要利税的输送者，实现并购目标。
-                    茅台出品白金樽酒，用小杯，细细品！
-                </div>
-                <div class="open-artical">
-                    <span class="open-btn">展开全文</span>
-                </div>
-            </div>
-        </div>
-        <div class="abs-certificate-wrap">
-            <img src="../asset/img/abs_bg2.jpg" alt="">
-            <div class="abs-img-border"></div>
-        </div>
+        <div class="nothing">暂无信息</div>
     </div>
     <!-- 公共主体end -->
 
@@ -190,7 +156,7 @@
                             </div>
                             <div class="col-6 col-sm-6 col-md-6 col-xl-4">
                                 <p>
-                                    <a href="../news/newsIndex.html">新闻资讯</a>
+                                    <a href="newsIndex.html">新闻资讯</a>
                                 </p>
                                 <p>
                                     <a href="../recruit/recruit.html">招聘信息</a>
@@ -229,11 +195,6 @@
                 type: 'progressbar',
             },
         });
-        var openBtn = $(".open-btn"),
-            textWrap = $(".abs-atext-wrap");
-        openBtn.on("click", function () {
-            textWrap.toggleClass("autoheight");
-        })
     </script>
 </body>
 

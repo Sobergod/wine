@@ -1,0 +1,209 @@
+.pagination-wrap {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination {
+    margin: 0 auto;
+}
+
+.page-link,
+.page-link:hover {
+    border: unset;
+    color: #FEC700;
+    background: unset;
+}
+
+.page-link:hover {
+    color: #FBE9A1;
+}
+
+.page-link:active {
+    outline: 0;
+    border: unset;
+}
+
+.page-link:focus {
+    outline: 0;
+    border: unset;
+}
+
+.news {
+    background: #5B150D;
+}
+
+.news-wrap-title {
+    padding: 20px 0;
+}
+
+.news-wrap-title p {
+    margin: 0;
+    font-size: 1.0625rem;
+    color: #FBE9A1;
+    text-transform: uppercase;
+}
+
+@media(min-width:768px) {
+    .news-wrap-title p {
+        font-size: 1.5625rem;
+    }
+}
+
+.yn-item {
+    padding: 15px 0;
+    border-bottom: 0.0625rem solid #FBE9A1;
+}
+
+.yn-item p {
+    margin: 0;
+}
+
+.ywimg-wrap {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ywimg-wrap img {
+    width: 100%;
+}
+
+.ywcon-wrap {
+    color: #FBE9A1;
+}
+
+.ywcon-wrap a {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #FBE9A1;
+}
+
+.ywcon-wrap a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ywcon {
+    font-size: 14px;
+}
+
+@media(min-width:576px) and (max-width:1024px) {
+    .ywcon {
+        display: none;
+        color: #5B150D;
+    }
+}
+
+.ywdate-wrap {
+    margin: 30px auto 0 auto;
+    width: 50%;
+    border: 1px solid #FBE9A1;
+    color: #FBE9A1;
+}
+
+.ywdate-wrap p {
+    text-align: center;
+}
+
+.jt-item {
+    padding: 15px 0;
+    color: #FBE9A1;
+    border-bottom: 1px dashed #FBE9A1;
+}
+
+.jt-item:nth-child(odd) .jt-l {
+    float: right;
+}
+
+.jt-item:nth-child(even) .jt-l {
+    float: left;
+}
+
+.jt-item:nth-child(odd) .jt-r {
+    float: left;
+}
+
+.jt-item:nth-child(even) .jt-r {
+    float: right;
+}
+
+.jt-title {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 22px;
+    color: #FBE9A1;
+}
+
+.jt-title:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.jtimg {
+    width: 100%;
+}
+
+.jt-con {
+    font-size: 14px;
+}
+
+.mtnews-item {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    color: #FBE9A1;
+    border: 1px solid #FBE9A1;
+}
+
+.mt-time {
+    line-height: 25px;
+    vertical-align: middle;
+}
+
+.mt-time span {
+    display: inline-block;
+}
+
+.mt-time span:first-child {
+    float: left;
+    font-size: 22px;
+}
+
+.mt-time span:last-child {
+    float: right;
+    font-size: 0.875rem;
+}
+
+.mt-title {
+    display: block;
+    margin: 0.625rem 0;
+    text-align: center;
+}
+
+.mt-con {
+    font-size: 0.75rem;
+    text-indent: 2em;
+}
+
+.news-detail-title {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #FBE8A4;
+    color: #FEC700;
+    font-size: 17px;
+}
+.news-details-bg {
+    min-height: 500px;
+    background-image:url(../img/abs_detail/bg_jingshen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nothing {
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+}
