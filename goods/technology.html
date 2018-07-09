@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="../asset/lib/swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" href="../asset/font/iconfont.css">
     <link rel="stylesheet" href="../asset/css/common.css">
-    <link rel="stylesheet" href="../asset/css/contact.css">
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dVffu5PnZXufWR9zp1m7MYGinDBbRkSh"></script>
-    <title>联系我们</title>
+    <title>通用布局</title>
     <style>
     </style>
 </head>
@@ -63,7 +61,7 @@
                             </a>
                         </li>
                         <li class="nav-item c-nav-item">
-                            <a class="nav-link" href="contact.html">
+                            <a class="nav-link" href="#">
                                 <i class="iconfont icon-shexiangji"></i>
                                 联系我们
                             </a>
@@ -90,67 +88,15 @@
             <li>
                 <a href="../index.html">主页</a>
             </li>
-            <li class="active">联系我们 Contact Us</li>
+            <!-- <li>招聘信息</li> -->
+            <li class="active">招聘信息 Recruitment</li>
         </ol>
     </div>
     <!-- 面包屑导航 end -->
 
     <!-- 公共主体start -->
-    <div id="mcontainer" class="contact">
-        <div class="container">
-            <div class="contact-title">
-                <div class="contact-title-line ll"></div>
-                <div class="contact-title-wrap">
-                    <p>联系我们</p>
-                    <p>contact us</p>
-                </div>
-                <div class="contact-title-line rr"></div>
-            </div>
-            <div class="contact-con">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="contact-phone-wrap contact-item">
-                            <div class="ic-wrap">
-                                <i class="iconfont icon-dianhua"></i>
-                            </div>
-                            <span>电 话：</span>
-                            <span>400-1780779</span>
-                        </div>
-                        <div class="contact-email-wrap contact-item">
-                            <div class="ic-wrap">
-                                <i class="iconfont icon-youxiang"></i>
-                            </div>
-                            <span>邮 编：</span>
-                            <span>130000</span>
-                        </div>
-                        <div class="contact-net-wrap contact-item">
-                            <div class="ic-wrap">
-                                <i class="iconfont icon-wangzhi"></i>
-                            </div>
-                            <span>网 址：</span>
-                            <a href="http://www.baijinzun.com">www.baijinzun.com</a>
-                        </div>
-                        <div class="contact-address-wrap contact-item">
-                            <div class="ic-wrap">
-                                <i class="iconfont icon-weizhi"></i>
-                            </div>
-                            <span>地 址：</span>
-                            <span>长春世纪大街与珠海路交汇长春总部基地D区C8栋</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-wrap">
-                            <img src="../asset/img/erweima_wechat.png" alt="">
-                            <p>微信公众平台</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 map-wrap">
-                        <div id="allmap"></div>
-                    </div>
-                </div>
-            </div>
+    <div id="mcontainer">
 
-        </div>
     </div>
     <!-- 公共主体end -->
 
@@ -246,22 +192,6 @@
                 type: 'progressbar',
             },
         });
-        var map = new BMap.Map("allmap");
-        var top_left_navigation = new BMap.NavigationControl();
-        var top_right_navigation = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL });
-        // 创建地址解析器实例
-        var myGeo = new BMap.Geocoder();
-        // 将地址解析结果显示在地图上,并调整地图视野
-        myGeo.getPoint("世纪大街与珠海路交汇长春总部基地D区C8栋", function (point) {
-            if (point) {
-                map.centerAndZoom(point, 16);
-                map.addOverlay(new BMap.Marker(point));
-            } else {
-                alert("您选择地址没有解析到结果!");
-            }
-        }, "长春市");
-        map.addControl(top_right_navigation);
-        map.enableScrollWheelZoom(true);
     </script>
 </body>
 

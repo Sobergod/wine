@@ -1,0 +1,19 @@
+.goods-title-wrap {
+    text-align: center;
+}
+
+.title-wrap-r p {
+    margin: 0;
+}
+
+.title-wrap-r p:first-child {
+    font-size: 3em;
+    font-family: 'yuweij';
+    color: #FFC602;
+}
+
+.title-wrap-r p:last-child {
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
