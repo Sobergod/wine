@@ -18,6 +18,14 @@ button:focus {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ff17';
+    src: url('../font/ff17/ff17.ttf');
+    src: url('../font/ff17/ff17.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* header start */
 
 .mheader-wrap {
