@@ -1,3 +1,7 @@
+body {
+    background: #500600;
+}
+
 button:focus {
     outline: unset;
 }
@@ -196,9 +200,11 @@ button:focus {
 
 /* container start */
 
-#mcontainer {
-    /* padding: 40px 0; */
-}
+/* #mcontainer { */
+
+/* padding: 40px 0; */
+
+/* } */
 
 /* container end */
 
