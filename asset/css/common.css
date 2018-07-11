@@ -63,7 +63,7 @@ button:focus {
 #mheader {
     z-index: 99;
     position: fixed;
-    top: 0.625rem;
+    /* top: 0.625rem; */
     width: 100%;
     background: #fff;
 }
@@ -200,11 +200,10 @@ button:focus {
 
 /* container start */
 
-/* #mcontainer { */
-
-/* padding: 40px 0; */
-
-/* } */
+#mcontainer {
+    min-height: 500px;
+    /* padding: 40px 0; */
+}
 
 /* container end */
 
