@@ -34,6 +34,7 @@
 }
 
 .main-wrap {
+    min-height: 600px;
     margin-top: 30px;
 }
 
@@ -222,10 +223,15 @@
         height: auto;
     }
     .text {
-        height: 800px;
+        /* display: none; */
+        /* height: 800px; */
         color: #fff;
         font-size: 14px;
         margin-top: 20px;
+    }
+    .text {
+        /* height: 250px; */
+        overflow: hidden;
     }
 }
 
@@ -239,6 +245,8 @@
 .text {
     padding-left: 20px;
     color: #fff;
+    /* height: 500px; */
+    overflow: hidden;
 }
 
 .img-wrap1 {
@@ -389,8 +397,98 @@
         left: 55.5%;
     }
 }
+
 .swiper-wrap {
     width: 80%;
     margin: 0 auto;
     height: 400px;
+}
+
+.gallery-top {
+    height: 50%;
+}
+
+.gallery-thumbs {
+    height: 50%;
+}
+
+@media(max-width:768px) {
+    .gallery-top {
+        height: 100%;
+    }
+    .gallery-thumbs {
+        display: none;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.ss {
+    margin: 0 auto;
+    width: 60%;
+    height: 180px;
+    line-height: 180px;
+    border: 1px solid #A05A26
+}
+
+.ss img {
+    width: 100%;
+}
+
+@media(min-width:1366px) {
+    .ss {
+        height: 280px;
+        line-height: 280px;
+    }
+}
+
+.swiper-slide-active .ss {
+    box-shadow: 0 0 25px 2px #A05A26
+}
+
+.dec-title {
+    width: 200px;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #FEE499;
+    background-image: url(../img/index/muban.png);
+    background-size: cover;
+}
+
+.dec-detail {
+    font-size: 17px;
+    color: #FEE499;
+}
+
+@media(max-width:768px) {
+    .dec {
+        margin-top: 100px;
+    }
+}
+.liucheng-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liucheng {
+    display: inline-block;
+    text-align: center;
+}
+
+.liucheng img {
+    width: 20%;
+}
+
+@media(min-width:768px) {
+    .liucheng {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .liucheng img {
+        width: 10%;
+    }
 }
