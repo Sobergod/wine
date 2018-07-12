@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="../asset/font/iconfont.css">
     <link rel="stylesheet" href="../asset/css/common.css">
     <link rel="stylesheet" href="../asset/css/goods.css">
-    <title>通用布局</title>
+    <link rel="stylesheet" href="../asset/lib/zoom-img/src/css/mag.css" />
+    <link rel="stylesheet" href="../asset/lib/zoom-img/css/index.css" />
+    <title>商品详情</title>
     <style>
     </style>
 </head>
 
-<body >
+<body>
     <!-- 公共头部start -->
     <div class="mheader-wrap">
         <div id="mheader">
@@ -130,7 +132,19 @@
                             </a>
                         </div>
                     </div>
-                    <div class="img-wrap col-md-6"></div>
+                    <div class="img-wrap col-md-6">
+                        <div class="mag-eg-el-wrap img-thumbnail">
+                            <div class="proportion">
+                                <div mag-thumb="inner" class="mag-eg-el">
+                                    <img src="../asset/lib/zoom-img/img//alley/500x300.jpg" />
+                                </div>
+                                <div mag-zoom="inner" class="mag-eg-el">
+                                    <img src="../asset/lib/zoom-img/img//alley/1000x600.jpg" />
+                                </div>
+                                <div class="filler"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,6 +269,17 @@
     <script src="../asset/lib/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
     <script src="../asset/lib/swiper/4.3.3/js/swiper.min.js"></script>
     <script src="../asset/js/footer.js"></script>
+    <script src="../asset/lib/zoom-img/js/jquery.bridget.js"></script>
+    <script src="../asset/lib/zoom-img/js/jquery.mousewheel.min.js"></script>
+    <script src="../asset/lib/zoom-img/js/jquery.event.drag.js"></script>
+    <script src="../asset/lib/zoom-img/js/screenfull.js"></script>
+    <script src="../asset/lib/zoom-img/js/hammer.min.js"></script>
+    <script src="../asset/lib/zoom-img/js/PreventGhostClick.js"></script>
+    <script src="../asset/lib/zoom-img/src/js/mag-analytics.js"></script>
+    <script src="../asset/lib/zoom-img/src/js/mag.js"></script>
+    <script src="../asset/lib/zoom-img/src/js/mag-jquery.js"></script>
+    <script src="../asset/lib/zoom-img/src/js/mag-control.js"></script>
+    <script src="../asset/lib/zoom-img/js/index.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: {
