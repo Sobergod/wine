@@ -468,11 +468,13 @@
         margin-top: 100px;
     }
 }
+
 .liucheng-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .liucheng {
     display: inline-block;
     text-align: center;
@@ -491,4 +493,81 @@
     .liucheng img {
         width: 10%;
     }
+}
+
+.zixun-item {
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 70%;
+    color: #FFE59B;
+    border-bottom: 1px solid #FFE59B;
+}
+
+.zixun-item p:first-child {
+    background: #9B7F50;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.zixun-item p:nth-child(2) {
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.zixun-item p:last-child {
+    background: #9B8150;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.zixun-item p:last-child a {
+    font-size: 12px;
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .zixun-item {
+        width: 100%;
+    }
+    .zixun-item p:nth-child(2) {
+        width: 50%;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        overflow: hidden;
+    }
+}
+
+#section6 .fp-tableCell {
+    vertical-align: bottom !important;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.btn-wrap img {
+    width: 80px;
+    margin: 0 20px;
+}
+@media(min-width:768px) {
+    .btn-wrap img {
+        width: 120px;
+        margin: 0 20px;
+    }
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff !important;
 }
