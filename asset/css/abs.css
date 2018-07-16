@@ -160,17 +160,19 @@
 }
 
 .abs-title-bg {
-    background: #441100;
+    background-image: url(../img/abs_bg5.jpg);
+    /* background-size: auto; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: #441100; */
 }
 
 .abs-article-wrap {
     margin: 0 auto;
     padding: 20px;
     width: 100%;
-    text-indent: 2em;
     font-size: 14px;
     color: #ddd;
-    background-image: url(../img/abs_bg5.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -207,10 +209,11 @@
     }
     .abs-atext-wrap {
         padding: 30px 0;
-        width: 80%;
+        width: 50%;
         height: auto;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 0;
+        margin-left: 80px;
     }
     .open-artical {
         display: none;
@@ -588,5 +591,24 @@
         right: 10%;
     }
 }
-
+.i-line {
+    content: '';
+    padding: 0;
+    margin: 0 5px 0 0;
+    height: 0.125rem;
+    width: 1.25rem;
+    display: inline-block;
+    background: #A46111;
+    vertical-align: middle;
+}
+.abs-ttext-wrap .i-line2 {
+    content: '';
+    padding: 0;
+    margin: 0 5px 0 0;
+    height: 2px;
+    width: 1.25rem;
+    display: inline-block;
+    background: #fff;
+    vertical-align: middle;
+}
 /* 企业文化 end */

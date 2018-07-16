@@ -13,6 +13,7 @@ button:focus {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'wenyue';
     src: url('../font/wenyue/WenYue.otf');
@@ -137,9 +138,13 @@ button:focus {
     overflow: hidden; */
 }
 
-.c-nav-item a {
+.c-nav-item .nav-link {
     margin: 0 0.5rem;
     color: #400A00;
+    font-size: 14px;
+}
+
+.dropdown-item {
     font-size: 14px;
 }
 
@@ -166,7 +171,7 @@ button:focus {
     }
 }
 
-@media (min-width: 870px) {
+@media (min-width: 950px) {
     .navbar-brand img {
         transform: scale(.9);
         display: inline-block;
@@ -517,6 +522,8 @@ button:focus {
 
 .recruit-detail-wrap,
 .recruit-list-wrap {
+    z-index: 3;
+    position: relative;
     margin: 1.25rem auto;
     width: 60%;
     font-size: 0.875rem;
@@ -674,6 +681,18 @@ button:focus {
     width: 200px;
     left: 0;
     bottom: 0;
+}
+.recruit_item5 {
+    display: none;
+}
+@media(min-width:1366px) {
+    .recruit_item5 {
+        display: inline;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
 }
 
 @media (max-width:768px) {
