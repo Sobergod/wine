@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content:flex-end">
                 <ul class="navbar-nav">
                     <li class="nav-item c-nav-item">
-                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link" href="index.html">
                             <i class="iconfont icon-iconfonthome"></i>
                             官网首页
                         </a>
@@ -100,21 +100,33 @@
     </div>
     <!-- 公共头部end -->
     <div id="fullpage">
-        <div class="section section1 bg" id="section0">
-            <img class="img-item item1 wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s" src="asset/img/index/section1_item1.png"
-                alt="">
-            <div class="xiaobeiimg-wrap">
-                <img class="wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="0.5s" src="asset/img/index/w1.png" alt="">
-                <img class="wow fadeInRight" data-wow-delay="1.6s" data-wow-duration="0.5s" src="asset/img/index/w2.png" alt="">
-                <img class="wow fadeInRight" data-wow-delay="1.7s" data-wow-duration="0.5s" src="asset/img/index/w3.png" alt="">
-                <img class="wow fadeInRight" data-wow-delay="1.8s" data-wow-duration="0.5s" src="asset/img/index/w4.png" alt="">
-                <img class="wow fadeInRight" data-wow-delay="1.9s" data-wow-duration="0.5s" src="asset/img/index/w5.png" alt="">
-                <img class="wow fadeInRight" data-wow-delay="2s" data-wow-duration="0.5s" src="asset/img/index/w6.png" alt="">
-            </div>
-            <div class="bottom-img">
-                <img class="img-item item2 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="2s" src="asset/img/index/section1_item2.png"
+        <div class="section section1" id="section0">
+            <div class="slide slide1 bg">
+                <img class="img-item item1 wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s" src="asset/img/index/section1_item1.png"
                     alt="">
-                <img class="img-item item3 wow fadeInUp" data-wow-duration="2s" src="asset/img/index/section1_item3.png" alt="">
+                <div class="xiaobeiimg-wrap">
+                    <img class="wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="0.5s" src="asset/img/index/w1.png" alt="">
+                    <img class="wow fadeInRight" data-wow-delay="1.6s" data-wow-duration="0.5s" src="asset/img/index/w2.png" alt="">
+                    <img class="wow fadeInRight" data-wow-delay="1.7s" data-wow-duration="0.5s" src="asset/img/index/w3.png" alt="">
+                    <img class="wow fadeInRight" data-wow-delay="1.8s" data-wow-duration="0.5s" src="asset/img/index/w4.png" alt="">
+                    <img class="wow fadeInRight" data-wow-delay="1.9s" data-wow-duration="0.5s" src="asset/img/index/w5.png" alt="">
+                    <img class="wow fadeInRight" data-wow-delay="2s" data-wow-duration="0.5s" src="asset/img/index/w6.png" alt="">
+                </div>
+                <div class="bottom-img">
+                    <img class="img-item item2 wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="2s" src="asset/img/index/section1_item2.png"
+                        alt="">
+                    <img class="img-item item3 wow fadeInUp" data-wow-duration="2s" src="asset/img/index/section1_item3.png" alt="">
+                </div>
+            </div>
+            <div class="slide bg" style="background-image: url(asset/img/index/1.jpg)">
+                <!--  -->
+                第二屏
+            </div>
+            <div class="slide bg" style="background-image: url(asset/img/index/1.jpg)">
+                第三屏
+            </div>
+            <div class="slide bg" style="background-image: url(asset/img/index/1.jpg)">
+                第四屏
             </div>
         </div>
         <div class="section bg" id="section1">
@@ -158,12 +170,13 @@
                             白金樽酒凭借“绵、香、浓、厚、正”的纯正口感，一经推出便得到了社会和消费者的广泛认可。 企业始终坚持“八大营销”、“多体驱动”以及“超限站”的营销策略，以“打造中国酒业第一营销团队”为经营战略目标，拥有一批专业功底深厚、实践经验丰富的高素质人才，致力于成为您健康的管理者、财富的创造者与事业的领航者。
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <div class="section bg" id="section2">
-            <img class="hua1 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2s" src="asset/img/flower.png" alt="">
-            <img class="hua2 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="2s" src="asset/img/flower1.png" alt="">
+            <img class="hua1 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="2s" src="asset/img/flower.png" alt="">
+            <img class="hua2 wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s" src="asset/img/flower1.png" alt="">
             <div class="title">
                 <div class="t2">
                     <img class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s" data-wow-offset="10" src="asset/img/index/logo2.png"
@@ -527,6 +540,7 @@
             scrollOverflow: true,
             navigation: true,
             navigationColor: "#ffffff",
+            slidesNavPosition: 'top',
             afterRender: function () {
                 wow = new WOW({
                     animateClass: 'animated',
@@ -545,7 +559,7 @@
         });
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 5,
             touchRatio: 0.2,
             loop: true,
             loopedSlides: 5, //looped slides should be the same

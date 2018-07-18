@@ -4,11 +4,23 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .section {
     overflow: hidden;
 }
-#section0 {
+
+.slide1 {
     background-image: url(../img/index/1.jpg);
+}
+
+.fp-controlArrow .fp-prev {
+    left: 5% !important;
+    border-color: transparent rgba(0, 0, 0, .5) transparent transparent !important;
+}
+
+.fp-controlArrow .fp-next {
+    right: 5% !important;
+    border-color: transparent rgba(0, 0, 0, .5) transparent transparent !important;
 }
 
 #section1 {
