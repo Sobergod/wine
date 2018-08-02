@@ -1,5 +1,7 @@
 /* 企业简介 start*/
-
+#mcontainer {
+    min-height: 400px;
+}
 .abs-title-wrap {
     padding: 30px 0;
     background-image: url(../img/abs_bg4.jpg);
@@ -281,7 +283,7 @@
 }
 
 #culture .nav-pills .nav-link {
-    padding: 0 10px;
+    padding:10px;
     margin: 5px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -303,10 +305,17 @@
         justify-content: center;
     }
 }
+@media(min-width:768px) {
+    #culture .nav-item {
+        margin: 0 30px;
+        width: 140px;
+        font-size: 17px;
+    }
+}
 
 .detail-pane-box {
-    padding: 20px 0;
-    min-height: 400px;
+    padding-top: 20px;
+    /* min-height: 400px; */
     /* background: #500500; */
 }
 
@@ -391,7 +400,6 @@
     .jingshen-item {
         z-index: 2;
         left: 15%;
-        ;
         width: 100px;
     }
 }
@@ -409,7 +417,7 @@
         z-index: 2;
         left: 28%;
         top: 0px;
-        width: 120px;
+        width: 160px;
     }
 }
 
@@ -417,7 +425,7 @@
     position: relative;
     margin-top: 20px;
     padding: 10px 0 40px 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .3);
 }
 
 .js-item {
@@ -448,7 +456,10 @@
     color: #fff;
     text-align: left;
 }
-
+.js-item-l span {
+    display: block;
+    text-align: center;
+}
 @media(max-width:768px) {
     .js-item-l,
     .js-item-r {
@@ -464,14 +475,19 @@
 }
 
 .yuanjing-wrap {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    margin-top:30px;
     padding: 20px 0 40px 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .3);
     text-align: center;
 }
-
+.fl1 {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 900;
+}
 .yuanjing-item {
     display: inline-block;
     padding: 20px;
@@ -518,12 +534,12 @@
 }
 
 .zongzhi-item {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .zongzhi-item span {
     color: #EEC801;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 5px;
 }
 
@@ -550,7 +566,7 @@
 @media(min-width:1350px) {
     .jiazhi_item2 {
         display: inline-block;
-        width: 150px;
+        width: 200px;
         top: 0;
         right: 10%;
     }
@@ -558,13 +574,14 @@
         display: inline-block;
         width: 200px;
         bottom: 0;
-        left: 0;
+        left: 10%;
     }
     .linian-item1 {
         display: inline-block;
         width: 150px;
         top: 0;
-        left: 10%;
+        left: 30%;
+        opacity: .7;
     }
     .linian-item2 {
         display: inline-block;
@@ -574,21 +591,21 @@
     }
     .zongzhi-item1 {
         display: inline-block;
-        width: 110px;
-        bottom: 0;
+        width: 150px;
+        bottom: -20px;
         right: 10%;
     }
     .zongzhi-item2 {
         display: inline-block;
-        width: 150px;
-        bottom: 0;
+        width: 200px;
+        bottom: -15px;
         left: 10%;
     }
     .zongzhi-item3 {
         display: inline-block;
         width: 150px;
         bottom: 0;
-        right: 10%;
+        right: 0;
     }
 }
 .i-line {
