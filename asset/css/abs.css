@@ -1,7 +1,9 @@
 /* 企业简介 start*/
+
 #mcontainer {
     min-height: 400px;
 }
+
 .abs-title-wrap {
     padding: 30px 0;
     background-image: url(../img/abs_bg4.jpg);
@@ -283,7 +285,7 @@
 }
 
 #culture .nav-pills .nav-link {
-    padding:10px;
+    padding: 5px;
     margin: 5px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -305,9 +307,10 @@
         justify-content: center;
     }
 }
+
 @media(min-width:768px) {
     #culture .nav-item {
-        margin: 0 30px;
+        margin: 0 15px;
         width: 140px;
         font-size: 17px;
     }
@@ -456,10 +459,12 @@
     color: #fff;
     text-align: left;
 }
+
 .js-item-l span {
     display: block;
     text-align: center;
 }
+
 @media(max-width:768px) {
     .js-item-l,
     .js-item-r {
@@ -475,11 +480,12 @@
 }
 
 .yuanjing-wrap {
-    margin-top:30px;
+    margin-top: 30px;
     padding: 20px 0 40px 0;
     background: rgba(0, 0, 0, .3);
     text-align: center;
 }
+
 .fl1 {
     display: flex;
     justify-content: space-around;
@@ -488,6 +494,7 @@
     margin-top: 40px;
     font-weight: 900;
 }
+
 .yuanjing-item {
     display: inline-block;
     padding: 20px;
@@ -608,6 +615,7 @@
         right: 0;
     }
 }
+
 .i-line {
     content: '';
     padding: 0;
@@ -618,6 +626,7 @@
     background: #A46111;
     vertical-align: middle;
 }
+
 .abs-ttext-wrap .i-line2 {
     content: '';
     padding: 0;
@@ -628,4 +637,29 @@
     background: #fff;
     vertical-align: middle;
 }
+
 /* 企业文化 end */
+
+.menu5-item-l {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.menu5-item-r {
+    padding: 10px;
+    border: 1px solid #BA8933;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+@media(min-width:768px) {
+    .menu5-item-r {
+        width: 62%;
+    }
+}

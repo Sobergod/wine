@@ -140,12 +140,16 @@
 }
 
 .con-item {
+    width: 80%;
     padding: 10px;
+    margin: 0 auto;
     margin-bottom: 20px;
     text-indent: 2em;
     border: 0.0625rem solid #fff;
     font-size: 14px;
     color: #fff;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 
 .gongyi {
